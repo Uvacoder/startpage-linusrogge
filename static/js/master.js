@@ -214,8 +214,10 @@ window.onload = () => {
 })();
 
 document.querySelector('#googleSearchBar').focus();
-document.querySelector('#googleSearchBar').onkeydown = function() {
-    document.querySelector('#googleSearch').classList.add('is-visible');
+document.querySelector('#googleSearchBar').onkeydown = function(e) {
+    if ((e.key !== "Escape") && (e.key !== "Meta") && (e.key !== "Shift") && (e.key !== "Alt") && (e.key !== "Control")) {
+        document.querySelector('#googleSearch').classList.add('is-visible');
+    }
 }
 
 document.onkeydown = function(e) {
@@ -223,7 +225,8 @@ document.onkeydown = function(e) {
     if (e.key === "Escape") {
         document.querySelector('#googleSearch').classList.remove('is-visible');
         document.querySelector('#googleSearchBar').value = '';
-    } else if ((e.key !== "Escape") && document.querySelector('#username') !== document.activeElement){
+    } 
+    else if ((e.key !== "Escape") && (e.key !== "Meta") && (e.key !== "Shift") && (e.key !== "Alt") && (e.key !== "Control") && document.querySelector('#username') !== document.activeElement){
         document.querySelector('#googleSearchBar').focus();
         document.querySelector('#googleSearch').classList.add('is-visible');
     }
