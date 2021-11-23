@@ -1,0 +1,79 @@
+/*
+ *
+ * INSTRUCTIONS
+ *
+ * Copy the Legal Disclaimer and the @font-faces statements to your regular CSS file.
+ * The font file(s) should be placed relative to the regular CSS file.
+ *
+ */
+
+/*
+ * Legal Disclaimer for Trial Licence licence
+ *
+ * Trial Licence
+ *
+ * Trial Web License for evaluation, testing and presentation purposes on internal domains without public access only.
+ * 
+ * The font files may not be distributed, published or used on any other domain(s).
+ * 
+ * Any further use is strictly prohibited.
+ *
+ * For internal test and presentation use only.
+ * For both print use and web / electronic use on internal domains without public access. Licencee may create documents / visuals / web pages etc. for the purpose of evaluation and presentation to clients or other interested parties.
+ * Any further use is strictly prohibited. The font files may not be distributed, published or used on any other domain(s).
+ *
+ */
+
+/* complete */
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-Italic";
+  src: url("AkkuratLLWebTrial-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-LightItalic";
+  src: url("AkkuratLLWebTrial-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-BoldItalic";
+  src: url("AkkuratLLWebTrial-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-Regular";
+  src: url("AkkuratLLWebTrial-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-ThinItalic";
+  src: url("AkkuratLLWebTrial-ThinItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-Light";
+  src: url("AkkuratLLWebTrial-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-Thin";
+  src: url("AkkuratLLWebTrial-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-Bold";
+  src: url("AkkuratLLWebTrial-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-BlackItalic";
+  src: url("AkkuratLLWebTrial-BlackItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkkuratLLWebTrial-Black";
+  src: url("AkkuratLLWebTrial-Black.woff") format("woff");
+}
+
+

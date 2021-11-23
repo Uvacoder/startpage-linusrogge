@@ -1,0 +1,17 @@
+$color-black: #000000;
+$color-white: #ffffff;
+
+// $sans: 'Akkurat';
+
+// @font-face {
+//     font-family: 'Akkurat';
+//     src: url('/fonts/AkkuratLLWebTrial-Regular.woff');
+// }
+
+$sans: 'Favorit';
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/fonts/EduFavorit-Regular.woff2');
+    font-feature-settings: 'ss03', 'ss04', 'ss05';
+}
