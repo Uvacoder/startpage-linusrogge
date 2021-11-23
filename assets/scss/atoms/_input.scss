@@ -1,13 +1,22 @@
 input {
+    outline: none;
+    appearance: none;
+    border: none;
+
     &#username {
         font-size: 1.5rem;
-        border: none;
-        border-radius: 0;
         padding: 0;
         margin: 0;
-        outline: none;
-        appearance: none;
         background: inherit;
         color: inherit;
+        border-radius: 0;
+    }
+
+    &#googleSearchBar {
+        font-size: 3rem;
+        background: none;
+        padding: 10px 16px 8px;
+        color: $color-white;
+        border-radius: 8px;
     }
 }

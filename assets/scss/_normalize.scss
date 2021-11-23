@@ -27,6 +27,32 @@ main {
         padding: 36px;
     }
 
+    article {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        #googleSearch {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 64px;
+            background: rgba($color-black, 0.9);
+            transform: translate(0, 20px);
+            opacity: 0;
+            transition: transform 300ms ease, opacity 300ms ease;
+            pointer-events: none;
+            
+            &.is-visible {
+                opacity: 1;
+                transform: translate(0);
+                pointer-events: all;
+            }
+        }
+    }
+
     footer {
         margin-top: auto;
         display: flex;

@@ -212,3 +212,19 @@ window.onload = () => {
     document.getElementById('quote').innerHTML = quote.text;
     document.getElementById('author').innerHTML = quote.author;
 })();
+
+document.querySelector('#googleSearchBar').focus();
+document.querySelector('#googleSearchBar').onkeydown = function() {
+    document.querySelector('#googleSearch').classList.add('is-visible');
+}
+
+document.onkeydown = function(e) {
+    e = e || window.event;
+    if (e.key === "Escape") {
+        document.querySelector('#googleSearch').classList.remove('is-visible');
+        document.querySelector('#googleSearchBar').value = '';
+    } else if ((e.key !== "Escape") && document.querySelector('#username') !== document.activeElement){
+        document.querySelector('#googleSearchBar').focus();
+        document.querySelector('#googleSearch').classList.add('is-visible');
+    }
+};
